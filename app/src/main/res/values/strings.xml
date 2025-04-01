@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pokedex</string>
+    <string name="couldn_t_load_data">Couldn\'t load data</string>
+    <string name="poke_details">Poke Details</string>
+    <string name="physic">Physic</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="stats">Stats</string>
+</resources>

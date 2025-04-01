@@ -27,8 +27,6 @@ class PokeListViewModelTest {
 
     @Test
     fun `GIVEN initial state WHEN ViewModel is created THEN state is Loading`() = runTest {
-        coEvery { mockPokesListUseCase() } returns ResultType.Success(emptyList())
-
         subject.state.test {
             assertEquals(PokeListUiState.Loading, awaitItem())
         }

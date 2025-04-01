@@ -40,7 +40,6 @@ class PokeDetailsViewModelTest {
 
     @Test
     fun `GIVEN initial state WHEN ViewModel is created THEN state is Loading`() = runTest {
-        coEvery { mockPokeDetailsUseCase(any()) } returns Success(PokeDetail(NAME))
         subject.state.test {
             assertEquals(PokeDetailsUiState.Loading, awaitItem())
         }

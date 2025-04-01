@@ -8,4 +8,5 @@ class PokeDetailsUseCase @Inject constructor(
 ) {
     suspend operator fun invoke(pokeName: String) =
         pokeDetailsRepository.getPokeDetails(pokeName)
+
 }

@@ -7,7 +7,3 @@ sealed class PokeDetailsUiState {
     data class Success(val data: PokeDetail) : PokeDetailsUiState()
     data object Error : PokeDetailsUiState()
 }
-
-sealed class DetailsScreenEvent {
-    data object OnInitialLoad : DetailsScreenEvent()
-}
